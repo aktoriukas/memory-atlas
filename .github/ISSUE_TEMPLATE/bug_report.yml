@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible Atlas problem without private memories.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach databases, credentials, transcripts, or screenshots with real memories. Use the read-only demo for screenshots. Security issues belong in private vulnerability reporting."
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Atlas, macOS, CPU architecture, and claude-mem version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic examples where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

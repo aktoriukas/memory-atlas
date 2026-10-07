@@ -1,0 +1,1158 @@
+{
+  "memories": [
+    {
+      "id": 1,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Keep the dashboard local",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "The desktop dashboard reads the existing local memory store. No hosted application server is needed.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "The desktop dashboard reads the existing local memory store.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "architecture",
+        "local-first"
+      ],
+      "files_read": [
+        "Sources/App.swift",
+        "README.md"
+      ],
+      "files_modified": [
+        "Sources/App.swift"
+      ],
+      "source": "codex",
+      "days_ago": 0,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 2,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Back up memories before editing",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Create a durable revision before saving. Keep text and semantic search aligned so both assistants retrieve the revised content.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Create a durable revision before saving.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "recovery",
+        "search",
+        "architecture"
+      ],
+      "files_read": [
+        "Resources/atlas.py"
+      ],
+      "files_modified": [
+        "Resources/atlas.py"
+      ],
+      "source": "claude",
+      "days_ago": 1,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 3,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Choose the signed-in CLI account",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Subscription-backed processing follows the account signed into the selected CLI. Model overrides are optional.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Subscription-backed processing follows the account signed into the selected CLI.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "settings",
+        "authentication"
+      ],
+      "files_read": [
+        "Sources/Settings.swift"
+      ],
+      "files_modified": [
+        "Sources/Settings.swift"
+      ],
+      "source": "codex",
+      "days_ago": 2,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 4,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Connect notes through shared concepts",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Project, file, and concept hubs create a navigable neighborhood. Manual links capture connections that metadata misses.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Project, file, and concept hubs create a navigable neighborhood.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "search"
+      ],
+      "files_read": [
+        "Sources/Graph.swift"
+      ],
+      "files_modified": [
+        "Sources/Graph.swift"
+      ],
+      "source": "claude",
+      "days_ago": 3,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 5,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Schedule watering by soil moisture",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Water the herb beds when soil moisture falls below the chosen threshold. Adjust the threshold after a week of measurements.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "Water the herb beds when soil moisture falls below the chosen threshold.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "garden/schedule.md"
+      ],
+      "files_modified": [
+        "garden/schedule.md"
+      ],
+      "source": "codex",
+      "days_ago": 4,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 6,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Separate basil from drought-tolerant herbs",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Basil needs a different watering schedule from rosemary and thyme. Keep their sensor readings and watering zones separate.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Basil needs a different watering schedule from rosemary and thyme.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "gardening"
+      ],
+      "files_read": [
+        "garden/herbs.md"
+      ],
+      "files_modified": [
+        "garden/herbs.md"
+      ],
+      "source": "claude",
+      "days_ago": 0,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 7,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Calibrate the outdoor temperature sensor",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Compare the sensor with a reference thermometer in shade. Store the measured offset instead of assuming the factory calibration is exact.",
+      "text": "",
+      "type": "bugfix",
+      "facts": [
+        "Compare the sensor with a reference thermometer in shade.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "firmware/sensor.py"
+      ],
+      "files_modified": [
+        "firmware/sensor.py"
+      ],
+      "source": "codex",
+      "days_ago": 1,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 8,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Export readings as portable CSV",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Use a timestamp, temperature, humidity, and battery column. Keep the export readable without a custom database client.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Use a timestamp, temperature, humidity, and battery column.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "exports",
+        "local-first"
+      ],
+      "files_read": [
+        "firmware/export.py"
+      ],
+      "files_modified": [
+        "firmware/export.py"
+      ],
+      "source": "claude",
+      "days_ago": 2,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 9,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Link reading notes to project decisions",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Keep a short summary of each book and link useful ideas to a project. Prefer specific examples that can be applied later.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Keep a short summary of each book and link useful ideas to a project.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "learning"
+      ],
+      "files_read": [
+        "notes/reading.md"
+      ],
+      "files_modified": [
+        "notes/reading.md"
+      ],
+      "source": "codex",
+      "days_ago": 3,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 10,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Review one idea each week",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "A small review habit keeps useful notes accessible. Connect the selected idea to work already in progress.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "A small review habit keeps useful notes accessible.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "learning",
+        "gardening"
+      ],
+      "files_read": [
+        "notes/review.md"
+      ],
+      "files_modified": [
+        "notes/review.md"
+      ],
+      "source": "claude",
+      "days_ago": 4,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 11,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Keep the dashboard local \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "The desktop dashboard reads the existing local memory store. No hosted application server is needed.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "The desktop dashboard reads the existing local memory store.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "architecture",
+        "local-first"
+      ],
+      "files_read": [
+        "Sources/App.swift",
+        "README.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 6,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 12,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Back up memories before editing \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Create a durable revision before saving. Keep text and semantic search aligned so both assistants retrieve the revised content.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Create a durable revision before saving.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "recovery",
+        "search",
+        "architecture"
+      ],
+      "files_read": [
+        "Resources/atlas.py"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 7,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 13,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Choose the signed-in CLI account \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Subscription-backed processing follows the account signed into the selected CLI. Model overrides are optional.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Subscription-backed processing follows the account signed into the selected CLI.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "settings",
+        "authentication"
+      ],
+      "files_read": [
+        "Sources/Settings.swift"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 8,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 14,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Connect notes through shared concepts \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Project, file, and concept hubs create a navigable neighborhood. Manual links capture connections that metadata misses.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Project, file, and concept hubs create a navigable neighborhood.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "search"
+      ],
+      "files_read": [
+        "Sources/Graph.swift"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 9,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 15,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Schedule watering by soil moisture \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Water the herb beds when soil moisture falls below the chosen threshold. Adjust the threshold after a week of measurements.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "Water the herb beds when soil moisture falls below the chosen threshold.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "garden/schedule.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 10,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 16,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Separate basil from drought-tolerant herbs \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Basil needs a different watering schedule from rosemary and thyme. Keep their sensor readings and watering zones separate.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Basil needs a different watering schedule from rosemary and thyme.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "gardening"
+      ],
+      "files_read": [
+        "garden/herbs.md"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 6,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 17,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Calibrate the outdoor temperature sensor \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Compare the sensor with a reference thermometer in shade. Store the measured offset instead of assuming the factory calibration is exact.",
+      "text": "",
+      "type": "bugfix",
+      "facts": [
+        "Compare the sensor with a reference thermometer in shade.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "firmware/sensor.py"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 7,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 18,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Export readings as portable CSV \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Use a timestamp, temperature, humidity, and battery column. Keep the export readable without a custom database client.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Use a timestamp, temperature, humidity, and battery column.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "exports",
+        "local-first"
+      ],
+      "files_read": [
+        "firmware/export.py"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 8,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 19,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Link reading notes to project decisions \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Keep a short summary of each book and link useful ideas to a project. Prefer specific examples that can be applied later.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Keep a short summary of each book and link useful ideas to a project.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "learning"
+      ],
+      "files_read": [
+        "notes/reading.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 9,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 20,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Review one idea each week \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "A small review habit keeps useful notes accessible. Connect the selected idea to work already in progress.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "A small review habit keeps useful notes accessible.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "learning",
+        "gardening"
+      ],
+      "files_read": [
+        "notes/review.md"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 10,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 21,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Keep the dashboard local \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "The desktop dashboard reads the existing local memory store. No hosted application server is needed.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "The desktop dashboard reads the existing local memory store.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "architecture",
+        "local-first"
+      ],
+      "files_read": [
+        "Sources/App.swift",
+        "README.md"
+      ],
+      "files_modified": [
+        "Sources/App.swift"
+      ],
+      "source": "codex",
+      "days_ago": 12,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 22,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Back up memories before editing \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Create a durable revision before saving. Keep text and semantic search aligned so both assistants retrieve the revised content.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Create a durable revision before saving.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "recovery",
+        "search",
+        "architecture"
+      ],
+      "files_read": [
+        "Resources/atlas.py"
+      ],
+      "files_modified": [
+        "Resources/atlas.py"
+      ],
+      "source": "claude",
+      "days_ago": 13,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 23,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Choose the signed-in CLI account \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Subscription-backed processing follows the account signed into the selected CLI. Model overrides are optional.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Subscription-backed processing follows the account signed into the selected CLI.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "settings",
+        "authentication"
+      ],
+      "files_read": [
+        "Sources/Settings.swift"
+      ],
+      "files_modified": [
+        "Sources/Settings.swift"
+      ],
+      "source": "codex",
+      "days_ago": 14,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 24,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Connect notes through shared concepts \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Project, file, and concept hubs create a navigable neighborhood. Manual links capture connections that metadata misses.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Project, file, and concept hubs create a navigable neighborhood.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "search"
+      ],
+      "files_read": [
+        "Sources/Graph.swift"
+      ],
+      "files_modified": [
+        "Sources/Graph.swift"
+      ],
+      "source": "claude",
+      "days_ago": 15,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 25,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Schedule watering by soil moisture \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Water the herb beds when soil moisture falls below the chosen threshold. Adjust the threshold after a week of measurements.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "Water the herb beds when soil moisture falls below the chosen threshold.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "garden/schedule.md"
+      ],
+      "files_modified": [
+        "garden/schedule.md"
+      ],
+      "source": "codex",
+      "days_ago": 16,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 26,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Separate basil from drought-tolerant herbs \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Basil needs a different watering schedule from rosemary and thyme. Keep their sensor readings and watering zones separate.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Basil needs a different watering schedule from rosemary and thyme.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "gardening"
+      ],
+      "files_read": [
+        "garden/herbs.md"
+      ],
+      "files_modified": [
+        "garden/herbs.md"
+      ],
+      "source": "claude",
+      "days_ago": 12,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 27,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Calibrate the outdoor temperature sensor \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Compare the sensor with a reference thermometer in shade. Store the measured offset instead of assuming the factory calibration is exact.",
+      "text": "",
+      "type": "bugfix",
+      "facts": [
+        "Compare the sensor with a reference thermometer in shade.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "firmware/sensor.py"
+      ],
+      "files_modified": [
+        "firmware/sensor.py"
+      ],
+      "source": "codex",
+      "days_ago": 13,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 28,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Export readings as portable CSV \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Use a timestamp, temperature, humidity, and battery column. Keep the export readable without a custom database client.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Use a timestamp, temperature, humidity, and battery column.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "exports",
+        "local-first"
+      ],
+      "files_read": [
+        "firmware/export.py"
+      ],
+      "files_modified": [
+        "firmware/export.py"
+      ],
+      "source": "claude",
+      "days_ago": 14,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 29,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Link reading notes to project decisions \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Keep a short summary of each book and link useful ideas to a project. Prefer specific examples that can be applied later.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Keep a short summary of each book and link useful ideas to a project.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "learning"
+      ],
+      "files_read": [
+        "notes/reading.md"
+      ],
+      "files_modified": [
+        "notes/reading.md"
+      ],
+      "source": "codex",
+      "days_ago": 15,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 30,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Review one idea each week \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "A small review habit keeps useful notes accessible. Connect the selected idea to work already in progress.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "A small review habit keeps useful notes accessible.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "learning",
+        "gardening"
+      ],
+      "files_read": [
+        "notes/review.md"
+      ],
+      "files_modified": [
+        "notes/review.md"
+      ],
+      "source": "claude",
+      "days_ago": 16,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 31,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Keep the dashboard local \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "The desktop dashboard reads the existing local memory store. No hosted application server is needed.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "The desktop dashboard reads the existing local memory store.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "architecture",
+        "local-first"
+      ],
+      "files_read": [
+        "Sources/App.swift",
+        "README.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 18,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 32,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Back up memories before editing \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Create a durable revision before saving. Keep text and semantic search aligned so both assistants retrieve the revised content.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Create a durable revision before saving.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "recovery",
+        "search",
+        "architecture"
+      ],
+      "files_read": [
+        "Resources/atlas.py"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 19,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 33,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Choose the signed-in CLI account \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Subscription-backed processing follows the account signed into the selected CLI. Model overrides are optional.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Subscription-backed processing follows the account signed into the selected CLI.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "settings",
+        "authentication"
+      ],
+      "files_read": [
+        "Sources/Settings.swift"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 20,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 34,
+      "kind": "observation",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "title": "Connect notes through shared concepts \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Project, file, and concept hubs create a navigable neighborhood. Manual links capture connections that metadata misses.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Project, file, and concept hubs create a navigable neighborhood.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "search"
+      ],
+      "files_read": [
+        "Sources/Graph.swift"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 21,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 35,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Schedule watering by soil moisture \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Water the herb beds when soil moisture falls below the chosen threshold. Adjust the threshold after a week of measurements.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "Water the herb beds when soil moisture falls below the chosen threshold.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "garden/schedule.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 22,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 36,
+      "kind": "observation",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "title": "Separate basil from drought-tolerant herbs \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Basil needs a different watering schedule from rosemary and thyme. Keep their sensor readings and watering zones separate.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Basil needs a different watering schedule from rosemary and thyme.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "gardening"
+      ],
+      "files_read": [
+        "garden/herbs.md"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 18,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 37,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Calibrate the outdoor temperature sensor \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Compare the sensor with a reference thermometer in shade. Store the measured offset instead of assuming the factory calibration is exact.",
+      "text": "",
+      "type": "bugfix",
+      "facts": [
+        "Compare the sensor with a reference thermometer in shade.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "sensors",
+        "calibration"
+      ],
+      "files_read": [
+        "firmware/sensor.py"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 19,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 38,
+      "kind": "observation",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "title": "Export readings as portable CSV \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Use a timestamp, temperature, humidity, and battery column. Keep the export readable without a custom database client.",
+      "text": "",
+      "type": "feature",
+      "facts": [
+        "Use a timestamp, temperature, humidity, and battery column.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "exports",
+        "local-first"
+      ],
+      "files_read": [
+        "firmware/export.py"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 20,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 39,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Link reading notes to project decisions \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "Keep a short summary of each book and link useful ideas to a project. Prefer specific examples that can be applied later.",
+      "text": "",
+      "type": "discovery",
+      "facts": [
+        "Keep a short summary of each book and link useful ideas to a project.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "knowledge-graph",
+        "learning"
+      ],
+      "files_read": [
+        "notes/reading.md"
+      ],
+      "files_modified": [],
+      "source": "claude",
+      "days_ago": 21,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 40,
+      "kind": "observation",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "title": "Review one idea each week \u00b7 follow-up",
+      "subtitle": "Synthetic example for the public Memory Atlas demo",
+      "narrative": "A small review habit keeps useful notes accessible. Connect the selected idea to work already in progress.",
+      "text": "",
+      "type": "decision",
+      "facts": [
+        "A small review habit keeps useful notes accessible.",
+        "This record contains invented demo content."
+      ],
+      "concepts": [
+        "learning",
+        "gardening"
+      ],
+      "files_read": [
+        "notes/review.md"
+      ],
+      "files_modified": [],
+      "source": "codex",
+      "days_ago": 22,
+      "generated_by_model": "demo-model"
+    },
+    {
+      "id": 1,
+      "kind": "summary",
+      "memory_session_id": "demo-memory-atlas",
+      "project": "memory-atlas",
+      "request": "Review the memory-atlas project",
+      "investigated": "Reviewed the existing notes and implementation decisions.",
+      "learned": "Specific examples and shared concepts make knowledge easier to revisit.",
+      "completed": "Documented the decisions and connected the related memories.",
+      "next_steps": "Review the next small improvement.",
+      "notes": "Synthetic example; no private memories are included.",
+      "source": "claude",
+      "days_ago": 0
+    },
+    {
+      "id": 2,
+      "kind": "summary",
+      "memory_session_id": "demo-garden-notes",
+      "project": "garden-notes",
+      "request": "Review the garden-notes project",
+      "investigated": "Reviewed the existing notes and implementation decisions.",
+      "learned": "Specific examples and shared concepts make knowledge easier to revisit.",
+      "completed": "Documented the decisions and connected the related memories.",
+      "next_steps": "Review the next small improvement.",
+      "notes": "Synthetic example; no private memories are included.",
+      "source": "codex",
+      "days_ago": 1
+    },
+    {
+      "id": 3,
+      "kind": "summary",
+      "memory_session_id": "demo-weather-station",
+      "project": "weather-station",
+      "request": "Review the weather-station project",
+      "investigated": "Reviewed the existing notes and implementation decisions.",
+      "learned": "Specific examples and shared concepts make knowledge easier to revisit.",
+      "completed": "Documented the decisions and connected the related memories.",
+      "next_steps": "Review the next small improvement.",
+      "notes": "Synthetic example; no private memories are included.",
+      "source": "claude",
+      "days_ago": 2
+    },
+    {
+      "id": 4,
+      "kind": "summary",
+      "memory_session_id": "demo-reading-list",
+      "project": "reading-list",
+      "request": "Review the reading-list project",
+      "investigated": "Reviewed the existing notes and implementation decisions.",
+      "learned": "Specific examples and shared concepts make knowledge easier to revisit.",
+      "completed": "Documented the decisions and connected the related memories.",
+      "next_steps": "Review the next small improvement.",
+      "notes": "Synthetic example; no private memories are included.",
+      "source": "codex",
+      "days_ago": 3
+    }
+  ],
+  "links": [
+    {
+      "from": "observation:1",
+      "to": "observation:8"
+    },
+    {
+      "from": "observation:2",
+      "to": "summary:1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+#!/bin/zsh
+set -eu
+cd "${0:A:h:h}"
+ARCH="${1:-$(uname -m)}"
+./scripts/build.sh "$ARCH"
+VERSION="$(tr -d '\n' < VERSION)"
+STAGE=".build/package-$ARCH"
+rm -rf "$STAGE"
+mkdir -p "$STAGE/THIRD_PARTY_LICENSES"
+ditto 'dist/Memory Atlas.app' "$STAGE/Memory Atlas.app"
+cp LICENSE "$STAGE/LICENSE.txt"
+cp THIRD_PARTY_NOTICES.md "$STAGE/THIRD_PARTY_NOTICES.md"
+cp docs/licenses/* "$STAGE/THIRD_PARTY_LICENSES/"
+codesign --verify --deep --strict "$STAGE/Memory Atlas.app"
+ARCHIVE="$PWD/dist/Memory-Atlas-$VERSION-$ARCH.zip"
+rm -f "$ARCHIVE"
+ditto -c -k --sequesterRsrc "$STAGE" "$ARCHIVE"
+print "Packaged $ARCHIVE"

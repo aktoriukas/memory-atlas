@@ -1,0 +1,55 @@
+name: Draft release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x86_64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check tag matches VERSION
+        run: test "$GITHUB_REF_NAME" = "v$(tr -d '\n' < VERSION)"
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+          cache: pip
+      - run: python -m pip install -r requirements-test.txt
+      - run: CHROMA_PYTHON="$(command -v python)" python scripts/check.py
+        env:
+          ANONYMIZED_TELEMETRY: 'False'
+      - run: ./scripts/package.sh "${{ matrix.arch }}"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: memory-atlas-${{ matrix.arch }}
+          path: dist/Memory-Atlas-*.zip
+          if-no-files-found: error
+  draft:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: memory-atlas-*
+          path: dist
+          merge-multiple: true
+      - name: Create draft with archives and checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd dist
+          sha256sum Memory-Atlas-*.zip > SHA256SUMS.txt
+          gh release create "$GITHUB_REF_NAME" Memory-Atlas-*.zip SHA256SUMS.txt --draft --verify-tag --title "Memory Atlas $GITHUB_REF_NAME" --notes-file ../docs/RELEASE_NOTES.md
