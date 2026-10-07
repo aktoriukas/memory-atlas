@@ -1,4 +1,4 @@
 # Isolated integration checks only; the app reuses claude-mem's installed runtime.
 chromadb==1.5.9
-onnxruntime>=1.20,<2
+onnxruntime>=1.30.0,<2
 protobuf<7
