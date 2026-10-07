@@ -1,12 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: pip
-    directory: /
-    schedule:
-      interval: weekly
-    open-pull-requests-limit: 2
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
     open-pull-requests-limit: 2
+# Python test-runtime bounds mirror the reviewed claude-mem adapter.
+# Change them manually alongside compatibility checks, not through automatic bound widening.
